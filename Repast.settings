@@ -1,0 +1,21 @@
+<simphony.settings.SettingsRegistry serialization="custom">
+  <unserializable-parents/>
+  <hashtable>
+    <default>
+      <loadFactor>0.75</loadFactor>
+      <threshold>8</threshold>
+    </default>
+    <int>3</int>
+    <int>5</int>
+    <string>SettingsRegistryId</string>
+    <string>Repast.registry</string>
+    <string>LastLoadedScenario</string>
+    <string>C:\RepastSimphony-2.0\workspace\EmergingTeams\EmergingTeams.rs</string>
+    <string>SettingsFileName</string>
+    <string>Repast.settings</string>
+    <string>*ORA.licenseAccepted</string>
+    <boolean>true</boolean>
+    <string>*ORA.home</string>
+    <string>C:\Program Files\ORA\</string>
+  </hashtable>
+</simphony.settings.SettingsRegistry>

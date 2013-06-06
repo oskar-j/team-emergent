@@ -1,0 +1,12 @@
+<context id="EmergingTeams"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://repast.org/scenario/context"
+	class="EmergingTeams.GMContextCreator">
+	<projection type="network" id="SensorNetwork">
+		<attribute type="boolean" value="false" id="directed" />
+	</projection>
+	<projection type="continuous space" id="ContinuousSpace2D">
+	</projection>
+	<attribute type="int" value="10" id="numNodes" />
+
+</context>

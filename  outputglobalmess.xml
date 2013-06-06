@@ -1,0 +1,221 @@
+<?xml version="1.0" standalone="yes"?>
+
+<DynamicNetwork>
+    <MetaNetwork id="Meta Network">
+        <documents></documents>
+        <nodes>
+            <nodeclass type="Agent" id="Agent">
+                <node id="EmergingTeams 3">
+                    <properties>
+                        <property name="Queue" type="String" value="[Ljava.util.ArrayList;@17db74b"/>
+                        <property name="MsgSent" type="String" value="0"/>
+                        <property name="MsgSentBefore" type="String" value="0"/>
+                        <property name="MsgExchanged" type="String" value="0"/>
+                    </properties>
+</node>
+                <node id="Node 63">
+                    <properties>
+                        <property name="MsgSent" type="String" value="0"/>
+                        <property name="MsgReceived" type="String" value="[]"/>
+                        <property name="EmergingTeams" type="String" value="EmergingTeams 3"/>
+                        <property name="CommunicationRange" type="String" value="60.0"/>
+                        <property name="Energy" type="String" value="79.69049519510008"/>
+                        <property name="MsgToSendList" type="String" value="[]"/>
+                        <property name="hello" type="String" value="[EmergingTeams.Message@8cbb70, EmergingTeams.Message@165d417, EmergingTeams.Message@476a1d, EmergingTeams.Message@87b2c8, EmergingTeams.Message@ea95e0, EmergingTeams.Message@115c044, EmergingTeams.Message@101bb2c, EmergingTeams.Message@a76a1f, EmergingTeams.Message@1283b68, EmergingTeams.Message@546909, EmergingTeams.Message@1bbfd3a]"/>
+                    </properties>
+</node>
+                <node id="Node 64">
+                    <properties>
+                        <property name="MsgSent" type="String" value="0"/>
+                        <property name="MsgReceived" type="String" value="[]"/>
+                        <property name="EmergingTeams" type="String" value="EmergingTeams 3"/>
+                        <property name="CommunicationRange" type="String" value="60.0"/>
+                        <property name="Energy" type="String" value="20.314625553553924"/>
+                        <property name="MsgToSendList" type="String" value="[]"/>
+                        <property name="hello" type="String" value="[EmergingTeams.Message@ee003d, EmergingTeams.Message@151e0c4, EmergingTeams.Message@7b7f35, EmergingTeams.Message@1dc7a0d, EmergingTeams.Message@1d121c7, EmergingTeams.Message@10094da, EmergingTeams.Message@12c74b9, EmergingTeams.Message@1a34544, EmergingTeams.Message@18849c, EmergingTeams.Message@1aa5221, EmergingTeams.Message@f61f70]"/>
+                    </properties>
+</node>
+                <node id="Node 65">
+                    <properties>
+                        <property name="MsgSent" type="String" value="0"/>
+                        <property name="MsgReceived" type="String" value="[]"/>
+                        <property name="EmergingTeams" type="String" value="EmergingTeams 3"/>
+                        <property name="CommunicationRange" type="String" value="60.0"/>
+                        <property name="Energy" type="String" value="75.66808652225882"/>
+                        <property name="MsgToSendList" type="String" value="[]"/>
+                        <property name="hello" type="String" value="[EmergingTeams.Message@8a1c9d, EmergingTeams.Message@15c960e, EmergingTeams.Message@17f896c, EmergingTeams.Message@174689, EmergingTeams.Message@1800bc, EmergingTeams.Message@1d837b6, EmergingTeams.Message@31ca2b, EmergingTeams.Message@cff10d, EmergingTeams.Message@1dac551, EmergingTeams.Message@1d0540c, EmergingTeams.Message@3e07bd]"/>
+                    </properties>
+</node>
+                <node id="Node 66">
+                    <properties>
+                        <property name="MsgSent" type="String" value="0"/>
+                        <property name="MsgReceived" type="String" value="[]"/>
+                        <property name="EmergingTeams" type="String" value="EmergingTeams 3"/>
+                        <property name="CommunicationRange" type="String" value="60.0"/>
+                        <property name="Energy" type="String" value="61.84312212700024"/>
+                        <property name="MsgToSendList" type="String" value="[]"/>
+                        <property name="hello" type="String" value="[EmergingTeams.Message@6e1def, EmergingTeams.Message@16f3621, EmergingTeams.Message@4ad009, EmergingTeams.Message@1a0280d, EmergingTeams.Message@1a59e87, EmergingTeams.Message@4ab70a, EmergingTeams.Message@1370529, EmergingTeams.Message@13401d7, EmergingTeams.Message@164db48, EmergingTeams.Message@7883df, EmergingTeams.Message@19a9d1]"/>
+                    </properties>
+</node>
+                <node id="Node 67">
+                    <properties>
+                        <property name="MsgSent" type="String" value="0"/>
+                        <property name="MsgReceived" type="String" value="[]"/>
+                        <property name="EmergingTeams" type="String" value="EmergingTeams 3"/>
+                        <property name="CommunicationRange" type="String" value="60.0"/>
+                        <property name="Energy" type="String" value="86.10441558947787"/>
+                        <property name="MsgToSendList" type="String" value="[]"/>
+                        <property name="hello" type="String" value="[EmergingTeams.Message@dbe8cd, EmergingTeams.Message@19126ab, EmergingTeams.Message@81ad8f, EmergingTeams.Message@1a9b093, EmergingTeams.Message@187bd31, EmergingTeams.Message@95fa7f, EmergingTeams.Message@70cf21, EmergingTeams.Message@2e84e1, EmergingTeams.Message@160b5e, EmergingTeams.Message@14455b3, EmergingTeams.Message@15669c7]"/>
+                    </properties>
+</node>
+                <node id="Node 68">
+                    <properties>
+                        <property name="MsgSent" type="String" value="0"/>
+                        <property name="MsgReceived" type="String" value="[]"/>
+                        <property name="EmergingTeams" type="String" value="EmergingTeams 3"/>
+                        <property name="CommunicationRange" type="String" value="60.0"/>
+                        <property name="Energy" type="String" value="45.521330252988264"/>
+                        <property name="MsgToSendList" type="String" value="[]"/>
+                        <property name="hello" type="String" value="[EmergingTeams.Message@3ac1f2, EmergingTeams.Message@1932839, EmergingTeams.Message@35cf9c, EmergingTeams.Message@d1258b, EmergingTeams.Message@f7e5d1, EmergingTeams.Message@1111260, EmergingTeams.Message@1cd9ab8, EmergingTeams.Message@168cef6, EmergingTeams.Message@1eb9b0d, EmergingTeams.Message@1107db9, EmergingTeams.Message@1ae0c9d]"/>
+                    </properties>
+</node>
+                <node id="Node 69">
+                    <properties>
+                        <property name="MsgSent" type="String" value="0"/>
+                        <property name="MsgReceived" type="String" value="[]"/>
+                        <property name="EmergingTeams" type="String" value="EmergingTeams 3"/>
+                        <property name="CommunicationRange" type="String" value="60.0"/>
+                        <property name="Energy" type="String" value="39.712441452080384"/>
+                        <property name="MsgToSendList" type="String" value="[]"/>
+                        <property name="hello" type="String" value="[EmergingTeams.Message@1be52c0, EmergingTeams.Message@2acfa2, EmergingTeams.Message@a5b597, EmergingTeams.Message@134ea95, EmergingTeams.Message@11507e7, EmergingTeams.Message@1b9d14c, EmergingTeams.Message@5be8f4, EmergingTeams.Message@1af7aa, EmergingTeams.Message@79d7b3, EmergingTeams.Message@14049d6, EmergingTeams.Message@1afc1de]"/>
+                    </properties>
+</node>
+                <node id="Node 70">
+                    <properties>
+                        <property name="MsgSent" type="String" value="0"/>
+                        <property name="MsgReceived" type="String" value="[]"/>
+                        <property name="EmergingTeams" type="String" value="EmergingTeams 3"/>
+                        <property name="CommunicationRange" type="String" value="60.0"/>
+                        <property name="Energy" type="String" value="12.108177018584684"/>
+                        <property name="MsgToSendList" type="String" value="[]"/>
+                        <property name="hello" type="String" value="[EmergingTeams.Message@1e101c5, EmergingTeams.Message@13b2f86, EmergingTeams.Message@ad4391, EmergingTeams.Message@12f0cf1, EmergingTeams.Message@1facbda, EmergingTeams.Message@5d8a8b, EmergingTeams.Message@132ace3, EmergingTeams.Message@1f491a6, EmergingTeams.Message@18660a9, EmergingTeams.Message@133fa14, EmergingTeams.Message@1675463]"/>
+                    </properties>
+</node>
+                <node id="Node 71">
+                    <properties>
+                        <property name="MsgSent" type="String" value="0"/>
+                        <property name="MsgReceived" type="String" value="[]"/>
+                        <property name="EmergingTeams" type="String" value="EmergingTeams 3"/>
+                        <property name="CommunicationRange" type="String" value="60.0"/>
+                        <property name="Energy" type="String" value="79.47535735997371"/>
+                        <property name="MsgToSendList" type="String" value="[]"/>
+                        <property name="hello" type="String" value="[EmergingTeams.Message@d53153, EmergingTeams.Message@997c11, EmergingTeams.Message@a06d88, EmergingTeams.Message@771eeb, EmergingTeams.Message@8ed68a, EmergingTeams.Message@1a70476, EmergingTeams.Message@161b52, EmergingTeams.Message@15bb90d, EmergingTeams.Message@d22707, EmergingTeams.Message@1005abc, EmergingTeams.Message@450ae7]"/>
+                    </properties>
+</node>
+                <node id="Node 72">
+                    <properties>
+                        <property name="MsgSent" type="String" value="0"/>
+                        <property name="MsgReceived" type="String" value="[]"/>
+                        <property name="EmergingTeams" type="String" value="EmergingTeams 3"/>
+                        <property name="CommunicationRange" type="String" value="60.0"/>
+                        <property name="Energy" type="String" value="76.4460948605556"/>
+                        <property name="MsgToSendList" type="String" value="[]"/>
+                        <property name="hello" type="String" value="[EmergingTeams.Message@cece16, EmergingTeams.Message@13c2797, EmergingTeams.Message@4b5011, EmergingTeams.Message@759265, EmergingTeams.Message@de3796, EmergingTeams.Message@1136abc, EmergingTeams.Message@1c472bc, EmergingTeams.Message@48989f, EmergingTeams.Message@1c2956, EmergingTeams.Message@de0cc2, EmergingTeams.Message@17a35c]"/>
+                    </properties>
+</node>
+                <node id="Node 73">
+                    <properties>
+                        <property name="MsgSent" type="String" value="0"/>
+                        <property name="MsgReceived" type="String" value="[]"/>
+                        <property name="EmergingTeams" type="String" value="EmergingTeams 3"/>
+                        <property name="CommunicationRange" type="String" value="60.0"/>
+                        <property name="Energy" type="String" value="56.702371595893055"/>
+                        <property name="MsgToSendList" type="String" value="[]"/>
+                        <property name="hello" type="String" value="[EmergingTeams.Message@1e608c2, EmergingTeams.Message@1491e75, EmergingTeams.Message@16ea258, EmergingTeams.Message@6455ae, EmergingTeams.Message@1354a1a, EmergingTeams.Message@194092c, EmergingTeams.Message@1e65292, EmergingTeams.Message@36fd8d, EmergingTeams.Message@404baf, EmergingTeams.Message@128dca6, EmergingTeams.Message@1ae37b5]"/>
+                    </properties>
+</node>
+                <node id="Node 74">
+                    <properties>
+                        <property name="MsgSent" type="String" value="0"/>
+                        <property name="MsgReceived" type="String" value="[]"/>
+                        <property name="EmergingTeams" type="String" value="EmergingTeams 3"/>
+                        <property name="CommunicationRange" type="String" value="60.0"/>
+                        <property name="Energy" type="String" value="37.145307971397415"/>
+                        <property name="MsgToSendList" type="String" value="[]"/>
+                        <property name="hello" type="String" value="[EmergingTeams.Message@cb7e2c, EmergingTeams.Message@1c8b69b, EmergingTeams.Message@4ca930, EmergingTeams.Message@f7ba93, EmergingTeams.Message@1fa2b3e, EmergingTeams.Message@12cfeb7, EmergingTeams.Message@106cf24, EmergingTeams.Message@97953, EmergingTeams.Message@1fc719b, EmergingTeams.Message@86b7bb, EmergingTeams.Message@887b30]"/>
+                    </properties>
+</node>
+            </nodeclass>
+        </nodes>
+        <networks>
+            <network sourceType="Agent" source="Agent" targetType="Agent" target="Agent" id="SensorNetwork">
+                <link source="Node 64" target="Node 63" type="double" value="1.0"></link>
+                <link source="Node 65" target="Node 63" type="double" value="1.0"></link>
+                <link source="Node 65" target="Node 64" type="double" value="1.0"></link>
+                <link source="Node 66" target="Node 63" type="double" value="1.0"></link>
+                <link source="Node 66" target="Node 64" type="double" value="1.0"></link>
+                <link source="Node 66" target="Node 65" type="double" value="1.0"></link>
+                <link source="Node 67" target="Node 63" type="double" value="1.0"></link>
+                <link source="Node 67" target="Node 64" type="double" value="1.0"></link>
+                <link source="Node 67" target="Node 65" type="double" value="1.0"></link>
+                <link source="Node 67" target="Node 66" type="double" value="1.0"></link>
+                <link source="Node 68" target="Node 63" type="double" value="1.0"></link>
+                <link source="Node 68" target="Node 64" type="double" value="1.0"></link>
+                <link source="Node 68" target="Node 65" type="double" value="1.0"></link>
+                <link source="Node 68" target="Node 66" type="double" value="1.0"></link>
+                <link source="Node 68" target="Node 67" type="double" value="1.0"></link>
+                <link source="Node 69" target="Node 63" type="double" value="1.0"></link>
+                <link source="Node 69" target="Node 64" type="double" value="1.0"></link>
+                <link source="Node 69" target="Node 65" type="double" value="1.0"></link>
+                <link source="Node 69" target="Node 66" type="double" value="1.0"></link>
+                <link source="Node 69" target="Node 67" type="double" value="1.0"></link>
+                <link source="Node 69" target="Node 68" type="double" value="1.0"></link>
+                <link source="Node 70" target="Node 63" type="double" value="1.0"></link>
+                <link source="Node 70" target="Node 64" type="double" value="1.0"></link>
+                <link source="Node 70" target="Node 65" type="double" value="1.0"></link>
+                <link source="Node 70" target="Node 66" type="double" value="1.0"></link>
+                <link source="Node 70" target="Node 67" type="double" value="1.0"></link>
+                <link source="Node 70" target="Node 68" type="double" value="1.0"></link>
+                <link source="Node 70" target="Node 69" type="double" value="1.0"></link>
+                <link source="Node 71" target="Node 63" type="double" value="1.0"></link>
+                <link source="Node 71" target="Node 64" type="double" value="1.0"></link>
+                <link source="Node 71" target="Node 65" type="double" value="1.0"></link>
+                <link source="Node 71" target="Node 66" type="double" value="1.0"></link>
+                <link source="Node 71" target="Node 67" type="double" value="1.0"></link>
+                <link source="Node 71" target="Node 68" type="double" value="1.0"></link>
+                <link source="Node 71" target="Node 69" type="double" value="1.0"></link>
+                <link source="Node 71" target="Node 70" type="double" value="1.0"></link>
+                <link source="Node 72" target="Node 63" type="double" value="1.0"></link>
+                <link source="Node 72" target="Node 64" type="double" value="1.0"></link>
+                <link source="Node 72" target="Node 65" type="double" value="1.0"></link>
+                <link source="Node 72" target="Node 66" type="double" value="1.0"></link>
+                <link source="Node 72" target="Node 67" type="double" value="1.0"></link>
+                <link source="Node 72" target="Node 68" type="double" value="1.0"></link>
+                <link source="Node 72" target="Node 69" type="double" value="1.0"></link>
+                <link source="Node 72" target="Node 70" type="double" value="1.0"></link>
+                <link source="Node 72" target="Node 71" type="double" value="1.0"></link>
+                <link source="Node 73" target="Node 63" type="double" value="1.0"></link>
+                <link source="Node 73" target="Node 64" type="double" value="1.0"></link>
+                <link source="Node 73" target="Node 65" type="double" value="1.0"></link>
+                <link source="Node 73" target="Node 66" type="double" value="1.0"></link>
+                <link source="Node 73" target="Node 67" type="double" value="1.0"></link>
+                <link source="Node 73" target="Node 68" type="double" value="1.0"></link>
+                <link source="Node 73" target="Node 69" type="double" value="1.0"></link>
+                <link source="Node 73" target="Node 70" type="double" value="1.0"></link>
+                <link source="Node 73" target="Node 71" type="double" value="1.0"></link>
+                <link source="Node 73" target="Node 72" type="double" value="1.0"></link>
+                <link source="Node 74" target="Node 63" type="double" value="1.0"></link>
+                <link source="Node 74" target="Node 64" type="double" value="1.0"></link>
+                <link source="Node 74" target="Node 65" type="double" value="1.0"></link>
+                <link source="Node 74" target="Node 66" type="double" value="1.0"></link>
+                <link source="Node 74" target="Node 67" type="double" value="1.0"></link>
+                <link source="Node 74" target="Node 68" type="double" value="1.0"></link>
+                <link source="Node 74" target="Node 69" type="double" value="1.0"></link>
+                <link source="Node 74" target="Node 70" type="double" value="1.0"></link>
+                <link source="Node 74" target="Node 71" type="double" value="1.0"></link>
+                <link source="Node 74" target="Node 72" type="double" value="1.0"></link>
+                <link source="Node 74" target="Node 73" type="double" value="1.0"></link>
+            </network>
+        </networks>
+    </MetaNetwork>
+</DynamicNetwork>
