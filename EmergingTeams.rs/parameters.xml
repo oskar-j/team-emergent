@@ -6,6 +6,15 @@
 	<parameter name="numNodes" displayName="numNodes" type="java.lang.Integer"
 		defaultValue="20" isReadOnly="false"
 		converter="repast.simphony.parameter.StringConverterFactory$IntConverter" />
+	<parameter name="numTeams" displayName="numTeams" type="java.lang.Integer"
+		defaultValue="4" isReadOnly="false"
+		converter="repast.simphony.parameter.StringConverterFactory$IntConverter" />
+	<parameter name="percStartMembership" displayName="percStartMembership"
+		type="java.lang.Integer" defaultValue="30" isReadOnly="false"
+		converter="repast.simphony.parameter.StringConverterFactory$IntConverter" />
+	<parameter name="allowMultiMembership" displayName="allowMultiMembership"
+		type="java.lang.Boolean" defaultValue="true" isReadOnly="false"
+		converter="repast.simphony.parameter.StringConverterFactory$IntConverter" />
 </parameters>
 
 
