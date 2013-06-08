@@ -13,6 +13,7 @@ public class Competency {
 
 	private String name;
 	private short id;
+	private Category category;
 	
 	public String getName() {
 		return name;
