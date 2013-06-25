@@ -16,6 +16,11 @@ public class Team {
 		
 	}
 	
+	public Team(String name, short id){
+		this.name = name;
+		this.id = id;
+	}
+	
 	public String toString(){
 		return "Team " + id + " " + name;
 	}

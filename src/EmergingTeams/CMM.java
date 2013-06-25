@@ -12,6 +12,14 @@ public class CMM {
 
 	}
 
+	public int getStage() {
+		return stage;
+	}
+
+	public void setStage(int stage) {
+		this.stage = stage;
+	}
+
 	public String toString() {
 		switch (stage) {
 		case 1: {
