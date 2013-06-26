@@ -265,7 +265,7 @@ public class Node {
 
 		} else {
 
-			Network network = (Network) FindProjection("GlobalMessenger/SensorNetwork");
+			Network network = (Network) FindProjection("EmergingTeams/DevelopersNetwork");
 			Iterator netNeighbors = new NetworkAdjacent(network, this).query()
 					.iterator();
 

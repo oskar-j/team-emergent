@@ -1,7 +1,7 @@
 <context id="EmergingTeams"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="http://repast.org/scenario/context"
-	class="EmergingTeams.GMContextCreator">
+	class="EmergingTeams.ETContextCreator">
 	
 	<projection type="network" id="DevelopersNetwork">
 		<attribute type="boolean" value="false" id="directed" />

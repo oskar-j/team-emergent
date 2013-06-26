@@ -10,7 +10,7 @@
 		defaultValue="4" isReadOnly="false"
 		converter="repast.simphony.parameter.StringConverterFactory$IntConverter" />
 	<parameter name="percStartMembership" displayName="percStartMembership"
-		type="java.lang.Integer" defaultValue="30" isReadOnly="false"
+		type="java.lang.Integer" defaultValue="10" isReadOnly="false"
 		converter="repast.simphony.parameter.StringConverterFactory$IntConverter" />
 	<parameter name="allowMultiMembership" displayName="allowMultiMembership"
 		type="java.lang.Boolean" defaultValue="true" isReadOnly="false"
