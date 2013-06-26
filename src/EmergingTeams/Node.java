@@ -172,16 +172,16 @@ public class Node {
 	shuffle = false)
 	public void updateNeighbors() {
 
-		Network network = (Network) FindProjection("GlobalMessenger/SensorNetwork");
+		Network network = (Network) FindProjection("EmergingTeams/DevelopersNetwork");
 		Iterator netNeighbors = new NetworkAdjacent(network, this).query()
 				.iterator();
 
 		while (netNeighbors.hasNext()) {
 			Object oldNeighbor = netNeighbors.next();
-			RemoveEdge("GlobalMessenger/SensorNetwork", this, oldNeighbor);
+			RemoveEdge("EmergingTeams/DevelopersNetwork", this, oldNeighbor);
 		}
 
-		ContinuousSpace mySpace = (ContinuousSpace) FindProjection("GlobalMessenger/ContinuousSpace2D");
+		ContinuousSpace mySpace = (ContinuousSpace) FindProjection("EmergingTeams/ContinuousSpace2D");
 		Iterator list = new ContinuousWithin(mySpace, this, communicationRange)
 				.query().iterator();
 		double myX = mySpace.getLocation(this).getX();
@@ -192,7 +192,7 @@ public class Node {
 			Object o = list.next();
 
 			if (o instanceof Node) {
-				CreateEdge("GlobalMessenger/SensorNetwork", this, o, 1.0);
+				CreateEdge("EmergingTeams/DevelopersNetwork", this, o, 1.0);
 			}
 		}
 
