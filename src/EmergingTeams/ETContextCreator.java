@@ -16,7 +16,7 @@ import repast.simphony.valueLayer.GridValueLayer;
 import static repast.simphony.essentials.RepastEssentials.*;
 
 /**
- * Context creator for Emergin Teams model
+ * Context creator for Team Emergence model
  * Here the space for agents is created.
  * 
  * @author Oskar Jarczyk
@@ -24,7 +24,13 @@ import static repast.simphony.essentials.RepastEssentials.*;
  */
 @SuppressWarnings("rawtypes")
 public class ETContextCreator implements ContextBuilder {
+	
+	@SuppressWarnings("unused")
+	private void say(String s) {
+		System.out.println(s);
+	}
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public Context build(Context context) {
 		int xdim = 50; // The x dimension of the physical space
 		int ydim = 50; // The y dimension of the physical space
@@ -37,7 +43,7 @@ public class ETContextCreator implements ContextBuilder {
 						xdim, ydim);
 
 		NetworkFactoryFinder.createNetworkFactory(null).createNetwork(
-				"SensorNetwork", context, false);
+				"DevelopersNetwork", context, false);
 
 		// The environment parameters contain the user-editable values that
 		// appear in the GUI.
@@ -54,7 +60,7 @@ public class ETContextCreator implements ContextBuilder {
 		GlobalMessenger theGlobalMessenger = new GlobalMessenger();
 		context.add(theGlobalMessenger);
 		theGlobalMessenger.initialize();
-		System.out.println("init Global Messenger, adentID = "
+		say("init Global Messenger, adentID = "
 				+ theGlobalMessenger.agentID + ", agentIDcounter = "
 				+ GlobalMessenger.agentIDCounter);
 
@@ -62,14 +68,14 @@ public class ETContextCreator implements ContextBuilder {
 			Node node = new Node();
 			context.add(node);
 			node.initialize(theGlobalMessenger);
-			System.out.println("Creating node, adentID = " + node.agentID
+			say("Creating node, adentID = " + node.agentID
 					+ ", agentIDcounter = " + Node.agentIDCounter);
 		}
 		
 		for (int i = 1; i <= numTeams; i++) {
 			Team team = new Team();
 			context.add(team);
-			System.out.println("Creating team, team.id = " + team.id
+			say("Creating team, team.id = " + team.id
 					+ ", team.name = " + team.name);
 		}
 

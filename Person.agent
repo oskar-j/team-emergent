@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agent version="1" agentcomment="This is an agent." agentclassname="Person" agentparentclassname="" agentinterfaces="" agentimports="">
+  <behaviorsteps/>
+  <tasksteps>
+    <taskstep x="291" y="135" comment="This is a task." command1="" command2="" command3="" command4="" command5="">
+      <label x="291" y="120" text="Do Task"/>
+    </taskstep>
+  </tasksteps>
+  <decisionsteps>
+    <decisionstep x="175" y="280" comment="This is an agent decision." criteria="" branchType="if">
+      <label x="175" y="265" text="Evaluate Criteria"/>
+    </decisionstep>
+  </decisionsteps>
+  <joinsteps/>
+  <agentproperties>
+    <agentproperty x="129" y="119" comment="This is an agent property." visibility="0" compiledname="property" type="def" defaultvalue="0">
+      <label x="134" y="104" text="Property"/>
+    </agentproperty>
+  </agentproperties>
+  <endsteps/>
+  <connections>
+    <transitions/>
+    <booleantransitions/>
+  </connections>
+</agent>

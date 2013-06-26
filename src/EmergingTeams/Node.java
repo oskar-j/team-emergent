@@ -291,12 +291,15 @@ public class Node {
 	 */
 	@ProbeID()
 	public String toString() {
-
 		// Set the default agent identifier.
 		String returnValue = this.agentID;
 		// Return the results.
 		return returnValue;
+	}
 
+	@SuppressWarnings("unused")
+	private void say(String s) {
+		System.out.println(s);
 	}
 
 }
