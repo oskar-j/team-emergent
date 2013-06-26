@@ -3,7 +3,7 @@
 	xsi:noNamespaceSchemaLocation="http://repast.org/scenario/context"
 	class="EmergingTeams.ETContextCreator">
 	
-	<projection type="network" id="DevelopersNetwork">
+	<projection type="network" id="SensorNetwork">
 		<attribute type="boolean" value="false" id="directed" />
 	</projection>
 	

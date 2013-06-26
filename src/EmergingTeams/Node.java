@@ -46,7 +46,7 @@ import static repast.simphony.essentials.RepastEssentials.*;
  * @author Oskar Jarczyk
  * 
  */
-public class Node {
+public class Node extends DefaultAgent {
 
 	public int msgSent = 0;
 	public ArrayList<Message> msgReceived;
@@ -54,6 +54,35 @@ public class Node {
 	public double communicationRange = 60;
 	public double energy = 0;
 	public ArrayList<Message> msgToSendList;
+
+	/**
+	 * The serialization runtime associates with each serializable class a
+	 * version number, called a serialVersionUID, which is used during
+	 * deserialization to verify that the sender and receiver of a serialized
+	 * object have loaded classes for that object that are compatible with
+	 * respect to serialization.
+	 * 
+	 * @field serialVersionUID
+	 * 
+	 */
+	private static final long serialVersionUID = (long) (Long.MAX_VALUE / (42L * (Math
+			.random())));
+	// 42 is answer to the life, universe and everything..
+
+	/**
+	 * This value is used to automatically generate agent identifiers.
+	 * 
+	 * @field agentIDCounter
+	 */
+	protected static long agentIDCounter = 1;
+
+	/**
+	 * This value is the agent's identifier.
+	 * 
+	 * @field agentID
+	 */
+	protected long numericID = agentIDCounter;
+	protected String agentID = "Node " + (agentIDCounter++);
 
 	@Parameter(displayName = "Msg Sent", usageName = "msgSent")
 	public int getMsgSent() {
@@ -110,44 +139,9 @@ public class Node {
 	}
 
 	/**
-	 * 
-	 * The serialization runtime associates with each serializable class a
-	 * version number, called a serialVersionUID, which is used during
-	 * deserialization to verify that the sender and receiver of a serialized
-	 * object have loaded classes for that object that are compatible with
-	 * respect to serialization.
-	 * 
-	 * @field serialVersionUID
-	 * 
-	 */
-	private static final long serialVersionUID = 42L;
-	// answer to the life, universe and everything..
-
-	/**
-	 * 
-	 * This value is used to automatically generate agent identifiers.
-	 * 
-	 * @field agentIDCounter
-	 * 
-	 */
-	protected static long agentIDCounter = 1;
-
-	/**
-	 * 
-	 * This value is the agent's identifier.
-	 * 
-	 * @field agentID
-	 * 
-	 */
-	protected long numericID = agentIDCounter;
-	protected String agentID = "Node " + (agentIDCounter++);
-
-	/**
-	 * 
 	 * This is the step behavior.
 	 * 
 	 * @method initialize
-	 * 
 	 */
 	public void initialize(GlobalMessenger aGlobalMessenger) {
 
@@ -172,13 +166,13 @@ public class Node {
 	shuffle = false)
 	public void updateNeighbors() {
 
-		Network network = (Network) FindProjection("EmergingTeams/DevelopersNetwork");
+		Network network = (Network) FindProjection("EmergingTeams/SensorNetwork");
 		Iterator netNeighbors = new NetworkAdjacent(network, this).query()
 				.iterator();
 
 		while (netNeighbors.hasNext()) {
 			Object oldNeighbor = netNeighbors.next();
-			RemoveEdge("EmergingTeams/DevelopersNetwork", this, oldNeighbor);
+			RemoveEdge("EmergingTeams/SensorNetwork", this, oldNeighbor);
 		}
 
 		ContinuousSpace mySpace = (ContinuousSpace) FindProjection("EmergingTeams/ContinuousSpace2D");
@@ -192,7 +186,7 @@ public class Node {
 			Object o = list.next();
 
 			if (o instanceof Node) {
-				CreateEdge("EmergingTeams/DevelopersNetwork", this, o, 1.0);
+				CreateEdge("EmergingTeams/SensorNetwork", this, o, 1.0);
 			}
 		}
 
@@ -265,7 +259,7 @@ public class Node {
 
 		} else {
 
-			Network network = (Network) FindProjection("EmergingTeams/DevelopersNetwork");
+			Network network = (Network) FindProjection("EmergingTeams/SensorNetwork");
 			Iterator netNeighbors = new NetworkAdjacent(network, this).query()
 					.iterator();
 

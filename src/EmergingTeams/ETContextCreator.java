@@ -43,7 +43,7 @@ public class ETContextCreator implements ContextBuilder {
 						xdim, ydim);
 
 		NetworkFactoryFinder.createNetworkFactory(null).createNetwork(
-				"DevelopersNetwork", context, false);
+				"SensorNetwork", context, false);
 
 		// The environment parameters contain the user-editable values that
 		// appear in the GUI.

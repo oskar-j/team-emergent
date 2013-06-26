@@ -1,9 +1,9 @@
 <repast.simphony.visualization.engine.DefaultDisplayDescriptor>
-  <name>A Display</name>
+  <name>Display all teams</name>
   <type>TWO_D</type>
   <styles>
     <entry>
-      <string>EmergingTeams.EmergingTeams</string>
+      <string>EmergingTeams.GlobalMessenger</string>
       <string>repast.simphony.visualization.editedStyle.EditedStyle2D</string>
     </entry>
     <entry>
@@ -13,8 +13,8 @@
   </styles>
   <editedStyles>
     <entry>
-      <string>EmergingTeams.EmergingTeams</string>
-      <string>EmergingTeams.EmergingTeams.style_0.xml</string>
+      <string>EmergingTeams.GlobalMessenger</string>
+      <string>EmergingTeams.GlobalMessenger.style_0.xml</string>
     </entry>
     <entry>
       <string>EmergingTeams.Node</string>
@@ -46,7 +46,7 @@
   <layoutInterval>0</layoutInterval>
   <layerOrder>
     <entry>
-      <string>EmergingTeams.EmergingTeams</string>
+      <string>EmergingTeams.GlobalMessenger</string>
       <int>1</int>
     </entry>
     <entry>

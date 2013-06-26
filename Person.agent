@@ -1,25 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agent version="1" agentcomment="This is an agent." agentclassname="Person" agentparentclassname="" agentinterfaces="" agentimports="">
-  <behaviorsteps/>
+  <behaviorsteps>
+    <behaviorstep x="616" y="486" scheduleannotationstart="" scheduleannotationpick="" scheduleannotationinterval="" scheduleannotationpriority="" scheduleannotationduration="" scheduleannotationshuffle="0" watchannotationid="" watchannotationquery="" watchannotationtargetclassname="" watchannotationtargetfieldnames="" watchannotationtriggercondition="" watchannotationtriggerschedule="1" watchannotationtriggerdelta="1" watchannotationtriggerpriority="" watchannotationpick="" comment="This is the step behavior." visibility="0" returntype="def" compiledname="step" parameters="" exceptions="">
+      <label x="616" y="471" text="Improve skills"/>
+    </behaviorstep>
+    <behaviorstep x="683" y="486" scheduleannotationstart="" scheduleannotationpick="" scheduleannotationinterval="" scheduleannotationpriority="" scheduleannotationduration="" scheduleannotationshuffle="0" watchannotationid="" watchannotationquery="" watchannotationtargetclassname="" watchannotationtargetfieldnames="" watchannotationtriggercondition="" watchannotationtriggerschedule="1" watchannotationtriggerdelta="1" watchannotationtriggerpriority="" watchannotationpick="" comment="This is the step behavior." visibility="0" returntype="def" compiledname="step" parameters="" exceptions="">
+      <label x="683" y="471" text="Get experience"/>
+    </behaviorstep>
+  </behaviorsteps>
   <tasksteps>
-    <taskstep x="291" y="135" comment="This is a task." command1="" command2="" command3="" command4="" command5="">
-      <label x="291" y="120" text="Do Task"/>
+    <taskstep x="625" y="244" comment="This is a task." command1="" command2="" command3="" command4="" command5="">
+      <label x="625" y="229" text="Join"/>
+    </taskstep>
+    <taskstep x="291" y="260" comment="This is a task." command1="" command2="" command3="" command4="" command5="">
+      <label x="291" y="245" text="Leave"/>
+    </taskstep>
+    <taskstep x="39" y="98" comment="This is a task." command1="" command2="" command3="" command4="" command5="">
+      <label x="39" y="83" text="Experience"/>
+    </taskstep>
+    <taskstep x="543" y="485" comment="This is a task." command1="" command2="" command3="" command4="" command5="">
+      <label x="543" y="470" text="Work on a task"/>
+    </taskstep>
+    <taskstep x="357" y="485" comment="This is a task." command1="" command2="" command3="" command4="" command5="">
+      <label x="357" y="470" text="Recruit new members"/>
+    </taskstep>
+    <taskstep x="248" y="383" comment="This is a task." command1="" command2="" command3="" command4="" command5="">
+      <label x="248" y="368" text="Rewire friends lst"/>
     </taskstep>
   </tasksteps>
   <decisionsteps>
-    <decisionstep x="175" y="280" comment="This is an agent decision." criteria="" branchType="if">
-      <label x="175" y="265" text="Evaluate Criteria"/>
+    <decisionstep x="436" y="107" comment="This is an agent decision." criteria="" branchType="if">
+      <label x="436" y="92" text="Am i member of this team?"/>
+    </decisionstep>
+    <decisionstep x="142" y="106" comment="This is a loop." criteria="" branchType="while">
+      <label x="142" y="91" text="Simulation tick"/>
+    </decisionstep>
+    <decisionstep x="274" y="105" comment="This is a loop." criteria="" branchType="while">
+      <label x="274" y="90" text="Iterate through all teams"/>
+    </decisionstep>
+    <decisionstep x="539" y="374" comment="This is an agent decision." criteria="" branchType="if">
+      <label x="539" y="359" text="Is there a task which fits me"/>
+    </decisionstep>
+    <decisionstep x="626" y="107" comment="This is an agent decision." criteria="" branchType="if">
+      <label x="626" y="92" text="Do i fit to this team"/>
+    </decisionstep>
+    <decisionstep x="437" y="261" comment="This is an agent decision." criteria="" branchType="if">
+      <label x="437" y="246" text="Am i satisfied from a team"/>
     </decisionstep>
   </decisionsteps>
   <joinsteps/>
   <agentproperties>
-    <agentproperty x="129" y="119" comment="This is an agent property." visibility="0" compiledname="property" type="def" defaultvalue="0">
-      <label x="134" y="104" text="Property"/>
+    <agentproperty x="37" y="181" comment="This is an agent property." visibility="0" compiledname="property" type="def" defaultvalue="0">
+      <label x="42" y="166" text="Skills"/>
+    </agentproperty>
+    <agentproperty x="38" y="26" comment="This is an agent property." visibility="0" compiledname="property" type="def" defaultvalue="0">
+      <label x="43" y="11" text="Name/id"/>
     </agentproperty>
   </agentproperties>
   <endsteps/>
   <connections>
-    <transitions/>
-    <booleantransitions/>
+    <transitions>
+      <transition>
+        <transitionsource type="task" index="3" anchor="1"/>
+        <transitiontarget type="task" index="4" anchor="3"/>
+        <bendpoints/>
+      </transition>
+      <transition>
+        <transitionsource type="task" index="4" anchor="1"/>
+        <transitiontarget type="task" index="5" anchor="2"/>
+        <bendpoints/>
+      </transition>
+      <transition>
+        <transitionsource type="task" index="5" anchor="1"/>
+        <transitiontarget type="decision" index="1" anchor="2"/>
+        <bendpoints/>
+      </transition>
+    </transitions>
+    <booleantransitions>
+      <booleantransition value="false">
+        <transitionsource type="decision" index="0" anchor="3"/>
+        <transitiontarget type="decision" index="4" anchor="1"/>
+        <bendpoints/>
+      </booleantransition>
+      <booleantransition value="true">
+        <transitionsource type="decision" index="0" anchor="2"/>
+        <transitiontarget type="decision" index="5" anchor="0"/>
+        <bendpoints/>
+      </booleantransition>
+      <booleantransition value="true">
+        <transitionsource type="decision" index="1" anchor="3"/>
+        <transitiontarget type="decision" index="2" anchor="1"/>
+        <bendpoints/>
+      </booleantransition>
+      <booleantransition value="true">
+        <transitionsource type="decision" index="2" anchor="3"/>
+        <transitiontarget type="decision" index="0" anchor="1"/>
+        <bendpoints/>
+      </booleantransition>
+      <booleantransition value="true">
+        <transitionsource type="decision" index="3" anchor="2"/>
+        <transitiontarget type="task" index="3" anchor="0"/>
+        <bendpoints/>
+      </booleantransition>
+      <booleantransition value="true">
+        <transitionsource type="decision" index="4" anchor="2"/>
+        <transitiontarget type="task" index="0" anchor="0"/>
+        <bendpoints/>
+      </booleantransition>
+      <booleantransition value="true">
+        <transitionsource type="decision" index="5" anchor="2"/>
+        <transitiontarget type="decision" index="3" anchor="0"/>
+        <bendpoints/>
+      </booleantransition>
+      <booleantransition value="false">
+        <transitionsource type="decision" index="5" anchor="1"/>
+        <transitiontarget type="task" index="1" anchor="3"/>
+        <bendpoints/>
+      </booleantransition>
+    </booleantransitions>
   </connections>
 </agent>
