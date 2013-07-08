@@ -7,6 +7,8 @@ import javax.measure.unit.*;
 import org.jscience.mathematics.number.*;
 import org.jscience.mathematics.vector.*;
 import org.jscience.physics.amount.*;
+
+import pool.NodeIds;
 import repast.simphony.adaptation.neural.*;
 import repast.simphony.adaptation.regression.*;
 import repast.simphony.context.*;
@@ -55,6 +57,15 @@ public class Node extends DefaultAgent {
 	public double energy = 0;
 	public ArrayList<Message> msgToSendList;
 
+	private long id;
+	private String label;
+
+	protected String agentID = "Node: " + this.id + " " + this.getName();
+	
+	public Node(){
+		this.id = NodeIds.id++;
+	}
+
 	/**
 	 * The serialization runtime associates with each serializable class a
 	 * version number, called a serialVersionUID, which is used during
@@ -67,22 +78,24 @@ public class Node extends DefaultAgent {
 	 */
 	private static final long serialVersionUID = (long) (Long.MAX_VALUE / (42L * (Math
 			.random())));
+
 	// 42 is answer to the life, universe and everything..
 
-	/**
-	 * This value is used to automatically generate agent identifiers.
-	 * 
-	 * @field agentIDCounter
-	 */
-	protected static long agentIDCounter = 1;
+	public String getLabel() {
+		return label;
+	}
 
-	/**
-	 * This value is the agent's identifier.
-	 * 
-	 * @field agentID
-	 */
-	protected long numericID = agentIDCounter;
-	protected String agentID = "Node " + (agentIDCounter++);
+	public void setLabel(String label) {
+		this.label = label;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
 
 	@Parameter(displayName = "Msg Sent", usageName = "msgSent")
 	public int getMsgSent() {
@@ -144,6 +157,9 @@ public class Node extends DefaultAgent {
 	 * @method initialize
 	 */
 	public void initialize(GlobalMessenger aGlobalMessenger) {
+		
+		say("initialize(GlobalMessenger aGlobalMessenger) " + 
+		"method was lunched on " + this.toString());
 
 		setMsgReceived(new ArrayList<Message>());
 		setMsgSent(0);
@@ -160,11 +176,10 @@ public class Node extends DefaultAgent {
 	 *         This is useful in case the nodes are moving.
 	 * 
 	 */
-	@ScheduledMethod(start = 1d, priority = 1.7976931348623157E308d, // priority
-																		// =
-																		// FIRST
-	shuffle = false)
+	@ScheduledMethod(start = 1d, priority = 1.7976931348623157E308d, shuffle = false)
 	public void updateNeighbors() {
+
+		say("updateNeighbors() method was lunched on " + this.toString());
 
 		Network network = (Network) FindProjection("EmergingTeams/SensorNetwork");
 		Iterator netNeighbors = new NetworkAdjacent(network, this).query()
@@ -207,6 +222,8 @@ public class Node extends DefaultAgent {
 	shuffle = false)
 	public void step() {
 
+		say("step() method was lunched on " + this.toString());
+
 		// RECEIVE msgs
 		ArrayList<Message> msgReceivedTmp = globalMessenger.receive(this);
 
@@ -236,6 +253,8 @@ public class Node extends DefaultAgent {
 	 * 
 	 */
 	public ArrayList<Message> hello() {
+
+		say("hello() method was lunched on " + this.toString());
 
 		ArrayList<Message> returnValue = new ArrayList<Message>();
 		double timeDouble = GetTickCount();
@@ -277,8 +296,8 @@ public class Node extends DefaultAgent {
 	}
 
 	/**
-	 * 
-	 * This method provides a human-readable name for the agent.
+	 * This method provides a human-readable name for the agent. A ProbeID
+	 * overrides default toString()
 	 * 
 	 * @method toString
 	 * 
@@ -291,7 +310,6 @@ public class Node extends DefaultAgent {
 		return returnValue;
 	}
 
-	@SuppressWarnings("unused")
 	private void say(String s) {
 		System.out.println(s);
 	}

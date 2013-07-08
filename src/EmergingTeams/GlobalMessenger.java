@@ -172,7 +172,7 @@ public class GlobalMessenger {
 	 */
 	public synchronized void send(Message aMsg) {
 
-		int numericReceiverID = (int) aMsg.receiver.numericID; 
+		int numericReceiverID = (int) aMsg.receiver.getId(); 
 		// DANGER unsafe conversion long to int
 		queue[numericReceiverID].add(aMsg);
 		msgSent++;
@@ -202,8 +202,9 @@ public class GlobalMessenger {
 	@SuppressWarnings("rawtypes")
 	public synchronized ArrayList<Message> receive(Node receiverNode) {
 		ArrayList<Message> msgsForReceiver = new ArrayList<Message>();
-		Iterator queueIterator = queue[(int) receiverNode.numericID].iterator();
+		Iterator queueIterator = queue[(int) receiverNode.getId()].iterator();
 		// DANGER unsafe conversion long to int
+		
 		while (queueIterator.hasNext()) {
 			Message aMessage = (Message) queueIterator.next();
 			if (aMessage.timestamp < GetTickCount()) {

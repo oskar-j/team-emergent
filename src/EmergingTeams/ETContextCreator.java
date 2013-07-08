@@ -1,5 +1,6 @@
 package EmergingTeams;
 
+import pool.NodeIds;
 import repast.simphony.context.Context;
 import repast.simphony.context.space.continuous.ContinuousSpaceFactoryFinder;
 import repast.simphony.context.space.graph.NetworkFactoryFinder;
@@ -68,8 +69,8 @@ public class ETContextCreator implements ContextBuilder {
 			Node node = new Node();
 			context.add(node);
 			node.initialize(theGlobalMessenger);
-			say("Creating node, adentID = " + node.agentID
-					+ ", agentIDcounter = " + Node.agentIDCounter);
+			say("Creating node, adentID = " + node.getId()
+					+ ", agentIDcounter = " + NodeIds.id);
 		}
 		
 		for (int i = 1; i <= numTeams; i++) {

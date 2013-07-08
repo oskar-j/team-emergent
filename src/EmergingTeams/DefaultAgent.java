@@ -4,7 +4,11 @@ import java.util.ArrayList;
 import java.lang.String;
 
 public class DefaultAgent {
-	protected String myName = "DefaultAgent";
+	
+	protected String name = "DefaultAgent";
+	
+	public String firstname;
+	public String lastname;
 
 	/***
 	 * Default Constructor
@@ -17,7 +21,7 @@ public class DefaultAgent {
 	 * behavior could ensue.
 	 */
 	public String getName() {
-		return myName;
+		return name;
 	}
 
 	/***
