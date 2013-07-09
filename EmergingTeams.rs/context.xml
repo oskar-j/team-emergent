@@ -1,7 +1,7 @@
 <context id="EmergingTeams"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="http://repast.org/scenario/context"
-	class="EmergingTeams.ETContextCreator">
+	class="EmergingTeams.NGContextCreator">
 	
 	<projection type="network" id="SensorNetwork">
 		<attribute type="boolean" value="false" id="directed" />

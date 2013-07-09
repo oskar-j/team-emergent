@@ -30,16 +30,14 @@ public class ScaleFreeNetworkGenerator implements NetworkGenerator<NodeAgent> {
 
 			// Special case when the network is empty
 			if (network.getDegree() == 0) {
-
 				NodeAgent secondAgent = nodesIterator.next();
 				network.addEdge(nodeAgent, secondAgent, 1);
 				nosNaRede.add(nodeAgent);
 				nosNaRede.add(secondAgent);
-				System.out.println("Entrei nos primeiros");
+				System.out.println("Agent have degree 0");
 				continue;
 			} else {
-				System.out.println("Entrei nos outros");
-
+				System.out.println("Agent have degree <> 0");
 			}
 
 			// Number of edges to create

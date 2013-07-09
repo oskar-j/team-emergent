@@ -1,0 +1,33 @@
+<repast.simphony.data.logging.outputter.engine.DefaultFileOutputterDescriptor>
+  <name>File Outputter</name>
+  <outputterFactory class="repast.simphony.data.logging.outputter.engine.DefaultFileOutputterDescriptor$1">
+    <outer-class reference="../.."/>
+  </outputterFactory>
+  <dataSetHandler>
+    <dataSets>
+      <string>Data Set of File Output</string>
+    </dataSets>
+  </dataSetHandler>
+  <streamHandler>
+    <columns>
+      <string>Tick</string>
+      <string>MinSize</string>
+      <string>MeanSize</string>
+      <string>MaxSize</string>
+    </columns>
+  </streamHandler>
+  <isBatchAction>false</isBatchAction>
+  <dataSetId class="string">Data Set of File Output</dataSetId>
+  <fileName>ModelOutput.txt</fileName>
+  <insertTimeToFileName>true</insertTimeToFileName>
+  <insertBatchToFileName>true</insertBatchToFileName>
+  <insertRunToFileName>true</insertRunToFileName>
+  <appendToFile>false</appendToFile>
+  <writeHeader>true</writeHeader>
+  <formatType class="repast.simphony.data.logging.outputter.LMDelimitedFormatter">
+    <streamHandler>
+      <columns/>
+    </streamHandler>
+  </formatType>
+  <delimiter>,</delimiter>
+</repast.simphony.data.logging.outputter.engine.DefaultFileOutputterDescriptor>

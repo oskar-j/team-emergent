@@ -11,24 +11,19 @@ public class ScaleFreeNetworkContext extends DefaultContext<NodeAgent> {
 
 	// Constructor
 	public ScaleFreeNetworkContext() {
-
 		// Call constructor of paret class
 		super("ScaleFreeNetworkContext");
 		addAgents(500);
 		buildNetwork();
-
 	}
 
 	private void addAgents(int numeroAgents) {
-
 		for (int i = 0; i < numeroAgents; i++) {
-			this.add(new NodeAgent("Agente-" + i));
+			this.add(new NodeAgent("Agent-" + i));
 		}
-
 	}
 
 	public void buildNetwork() {
-
 		NetworkBuilder<NodeAgent> builder = new NetworkBuilder<NodeAgent>(
 				"NetworkTest", this, false);
 		builder.setGenerator(new ScaleFreeNetworkGenerator(this));
@@ -38,7 +33,6 @@ public class ScaleFreeNetworkContext extends DefaultContext<NodeAgent> {
 	}
 
 	public Projection<NodeAgent> getProjection(String name) {
-
 		return network;
 	}
 }
