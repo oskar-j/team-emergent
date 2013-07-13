@@ -19,11 +19,12 @@ import repast.simphony.valueLayer.GridValueLayer;
 import static repast.simphony.essentials.RepastEssentials.*;
 
 /**
- * Context creator for Team Emergence model Here the space for agents is
+ * Context creator for Team Emergence model 
+ * Here the space for agents is
  * created.
  * 
  * @author Oskar Jarczyk
- * 
+ * @since 1.0
  */
 @SuppressWarnings("rawtypes")
 public class NGContextCreator implements ContextBuilder {
@@ -33,13 +34,17 @@ public class NGContextCreator implements ContextBuilder {
 		System.out.println(s);
 	}
 
+	public NGContextCreator() {
+		say("NGContextCreator object created");
+	}
+
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public Context build(Context context) {
 
-		ScaleFreeNetworkContext snc = 
+		ScaleFreeNetworkContext scaleFreeNetworkContext = 
 				new ScaleFreeNetworkContext();
-		ScaleFreeNetworkGenerator sng = 
-				new ScaleFreeNetworkGenerator(snc);
+		
+		ScaleFreeNetworkGenerator sng = new ScaleFreeNetworkGenerator(snc);
 
 		NetworkFactoryFinder.createNetworkFactory(null).createNetwork(
 				"SensorNetwork", context, false);
@@ -55,13 +60,13 @@ public class NGContextCreator implements ContextBuilder {
 		boolean allowMultiMembership = (Boolean) p
 				.getValue("allowMultiMembership");
 		int numSteps = (Integer) p.getValue("numSteps");
-		
+
 		for (int i = 1; i <= numTeams; i++) {
 			Team team = new Team();
 			context.add(team);
 			team.initialize();
-			say("Creating team, team.id = " + team.id
-					+ ", team.name = " + team.name);
+			say("Creating team, team.id = " + team.id + ", team.name = "
+					+ team.name);
 		}
 
 		// Populate the root context with the initial agents
